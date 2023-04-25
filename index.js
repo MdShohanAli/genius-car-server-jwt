@@ -23,9 +23,10 @@ function verifyJwt(req, res, next) {
         }
         console.log('decode', decode);
         req.decode = decode
+        next();
     })
 
-    next()
+
 }
 
 
